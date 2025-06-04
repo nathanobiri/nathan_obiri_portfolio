@@ -1,0 +1,19 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#87CEEB"/>
+    
+    <!-- Fish -->
+    <path d="M200,300 Q300,250 400,300 Q300,350 200,300" fill="#FFD700" stroke="#000000" stroke-width="2"/>
+    <circle cx="250" cy="280" r="5" fill="#000000"/>
+    
+    <!-- Oil Spill -->
+    <circle cx="400" cy="300" r="50" fill="rgba(0,0,0,0.3)"/>
+    <circle cx="400" cy="300" r="100" fill="rgba(0,0,0,0.2)"/>
+    
+    <!-- Coral -->
+    <path d="M500,400 Q550,350 600,400 Q550,450 500,400" fill="#FF4500" stroke="#000000" stroke-width="2"/>
+    <path d="M520,420 Q570,370 620,420 Q570,470 520,420" fill="#FF4500" stroke="#000000" stroke-width="2"/>
+    
+    <!-- Waves -->
+    <path d="M0,500 Q100,480 200,500 Q300,480 400,500 Q500,480 600,500 Q700,480 800,500" stroke="#000000" stroke-width="2" fill="none"/>
+</svg>
