@@ -6,6 +6,33 @@
     <title>Nairobi: A City of Opposites - Nathan Obiri</title>
     <link rel="stylesheet" href="../styles.css">
     <style>
+        /* Image Sections */
+        .full-width-image {
+            width: 100%;
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            margin: 3rem 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .image-caption {
+            background: rgba(0,0,0,0.6);
+            padding: 1.5rem;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+        .image-caption p {
+            margin: 0.5rem 0 0;
+            font-style: italic;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
         .article-content {
             font-family: 'Georgia', serif;
             line-height: 1.8;
@@ -65,35 +92,142 @@
                     <p>This evocative description captures the essence of Nairobi—a city that defies simple categorization. It is a place where ancient traditions meet modern aspirations, where natural beauty coexists with urban development, and where the spirit of resilience thrives despite challenges.</p>
                 </section>
 
+                <div style="margin: 30px 0;">
+                    <div style="position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <img src="images/nairobi/nairobi.jpg.jpg" alt="Nairobi Skyline" style="width: 100%; height: 400px; object-fit: cover; display: block;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px; text-align: left;">
+                            <h3 style="margin: 0 0 5px 0; font-size: 1.5em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Nairobi Skyline</h3>
+                            <p style="margin: 0; font-size: 1em; opacity: 0.95;">The vibrant cityscape of Nairobi</p>
+                        </div>
+                    </div>
+                </div>
+                
                 <section class="essay-section">
                     <h2>The Paradox of Nairobi</h2>
+                    
+                    <div style="margin: 30px 0;">
+                        <div style="position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            <img src="images/nairobi/contrast.jpg" alt="Nairobi's Contrasting Landscapes" style="width: 100%; height: 400px; object-fit: cover; display: block;">
+                            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px; text-align: left;">
+                                <h3 style="margin: 0 0 5px 0; font-size: 1.5em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Dual Realities</h3>
+                                <p style="margin: 0; font-size: 1em; opacity: 0.95;">Modern skyscrapers and traditional markets existing side by side</p>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <p>Nairobi embodies a unique set of contradictions. In the city's bustling streets, one can witness matatus—colorfully decorated public transport vehicles—adorned with reggae art and neon lights, speeding past luxury Range Rovers and barefoot merchants in the same breath. This juxtaposition of extremes is a hallmark of Nairobi's character.</p>
                     <p>The city's skyline showcases this duality: towering steel and glass skyscrapers scrape the sky in the central business district, while in informal settlements like Kibera, mabati (corrugated iron) roofs glisten under the sun. This contrast extends to Nairobi National Park, where lions roam freely on the edge of suburbia, while traffic congestion dominates nearby roads.</p>
                 </section>
 
+
                 <section class="essay-section">
                     <h2>The Nairobi Spirit</h2>
                     <p>Walking through Nairobi's streets is an experience that engages all senses. In Westlands, the morning air is fresh and crisp, with office skyscrapers reflecting the sky above. Contrast this with Gikomba market, where the air is thick with the sounds of haggling and the smells of secondhand textiles and roasted corn.</p>
+                    
+                    <div style="margin: 30px 0;">
+                        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                            <div style="flex: 1; min-width: 300px; position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                <img src="images/nairobi/westlands.jpg" alt="Westlands Skyline" style="width: 100%; height: 350px; object-fit: cover; display: block;">
+                                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 15px; text-align: left;">
+                                    <h3 style="margin: 0 0 3px 0; font-size: 1.3em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Modern Nairobi</h3>
+                                    <p style="margin: 0; font-size: 0.95em; opacity: 0.95;">The gleaming towers of Westlands at dawn</p>
+                                </div>
+                            </div>
+                            
+                            <div style="flex: 1; min-width: 300px; position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                <img src="images/nairobi/market-life.jpg" alt="Gikomba Market" style="width: 100%; height: 350px; object-fit: cover; display: block;">
+                                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 15px; text-align: left;">
+                                    <h3 style="margin: 0 0 3px 0; font-size: 1.3em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Market Pulse</h3>
+                                    <p style="margin: 0; font-size: 0.95em; opacity: 0.95;">The vibrant energy of Gikomba market</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <p>At Kencom bus station, a microcosm of Nairobi's diversity comes together: students with their schoolbags, mothers carrying babies on their backs, and dreamers who have nowhere else to go but forward. This movement, this constant forward momentum, defines the Nairobi spirit—restless, resilient, and unwaveringly optimistic.</p>
                 </section>
 
+                
                 <section class="essay-section">
                     <h2>From Swamp to Hub</h2>
                     <p>Nairobi's journey from colonial railroad hub to modern economic powerhouse is a testament to its evolution. The city's name, Enkare Nairobi, meaning "place of cool waters," reflects its origins as a swampy area. Today, Nairobi stands as East Africa's economic and technological hub, with its influence extending into global trade, innovation, politics, and art.</p>
+                    
+                    <div style="margin: 30px 0;">
+                        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                            <div style="flex: 1; min-width: 300px; position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                <img src="images/nairobi/historic.jpg" alt="Historic Nairobi" style="width: 100%; height: 350px; object-fit: cover; display: block;">
+                                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 15px; text-align: left;">
+                                    <h3 style="margin: 0 0 3px 0; font-size: 1.3em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Nairobi's Humble Beginnings</h3>
+                                    <p style="margin: 0; font-size: 0.95em; opacity: 0.95;">The early days of the city's development</p>
+                                </div>
+                            </div>
+                            
+                            <div style="flex: 1; min-width: 300px; position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                <img src="images/nairobi/modern.jpg" alt="Modern Nairobi" style="width: 100%; height: 350px; object-fit: cover; display: block;">
+                                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 15px; text-align: left;">
+                                    <h3 style="margin: 0 0 3px 0; font-size: 1.3em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Contemporary Metropolis</h3>
+                                    <p style="margin: 0; font-size: 0.95em; opacity: 0.95;">Nairobi's modern skyline and infrastructure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <p>From the business district of Upper Hill to the artistic enclaves of Kilimani, Nairobi is a city that dreams in multiple languages—code, verse, silicon, and rhythm. This diversity fuels its growth and creativity.</p>
                 </section>
-
+                
                 <section class="essay-section">
                     <h2>Natural Beauty Amidst Urbanity</h2>
+                    
+                    <div style="margin: 30px 0;">
+                        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                            <div style="flex: 1; min-width: 300px; position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                <img src="images/nairobi/nature1.jpg" alt="Karura Forest" style="width: 100%; height: 350px; object-fit: cover; display: block;">
+                                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 15px; text-align: left;">
+                                    <h3 style="margin: 0 0 3px 0; font-size: 1.3em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Karura Forest</h3>
+                                    <p style="margin: 0; font-size: 0.95em; opacity: 0.95;">A green oasis in the heart of the city</p>
+                                </div>
+                            </div>
+                            
+                            <div style="flex: 1; min-width: 300px; position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                <img src="images/nairobi/nature2.jpg" alt="Urban Greenery" style="width: 100%; height: 350px; object-fit: cover; display: block;">
+                                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 15px; text-align: left;">
+                                    <h3 style="margin: 0 0 3px 0; font-size: 1.3em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Urban Greenery</h3>
+                                    <p style="margin: 0; font-size: 0.95em; opacity: 0.95;">Nature and city in harmony</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <p>Despite its urban character, Nairobi maintains close ties with nature. At Karura Forest, one can witness the city exhaling—birds calling out the names of ancestors, trees standing as silent witnesses to history. The rivers that flow through the city connect different neighborhoods like old friends.</p>
+                    
                     <p>These green spaces serve as important lungs for the city, providing respite from the urban hustle and preserving Nairobi's natural heritage. The conservation efforts of figures like Wangari Maathai have played a crucial role in maintaining this balance.</p>
                 </section>
+
+                <div style="margin: 30px 0;">
+                    <div style="position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <img src="images/nairobi/nightlife.jpg" alt="Nairobi by Night" style="width: 100%; height: 400px; object-fit: cover; display: block;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px; text-align: left;">
+                            <h3 style="margin: 0 0 5px 0; font-size: 1.5em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Nairobi Nightlife</h3>
+                            <p style="margin: 0; font-size: 1em; opacity: 0.95;">The city that never sleeps comes alive after dark</p>
+                        </div>
+                    </div>
+                </div>
 
                 <section class="essay-section">
                     <h2>Nairobi by Night</h2>
                     <p>As the sun sets, Nairobi transforms into a different city. Rooftop bars come alive with laughter, while the smell of nyama choma (grilled meat) fills the air from roadside barbecues. The city's nightlife is a testament to its diversity—whether you're enjoying chai at a street kiosk or sipping champagne in a sky lounge, the experience is uniquely Nairobi.</p>
                     <p>What's remarkable is how this nighttime transformation maintains a democratic quality—stars shine equally over all parts of the city, from luxury apartments to humble homes, from Lavington to Kariobangi.</p>
                 </section>
+
+                <div style="margin: 30px 0;">
+                    <div style="position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <img src="images/nairobi/resilience.jpg" alt="Nairobi's Resilience" style="width: 100%; height: 400px; object-fit: cover; display: block;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 20px; text-align: left;">
+                            <h3 style="margin: 0 0 5px 0; font-size: 1.5em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Strength in Adversity</h3>
+                            <p style="margin: 0; font-size: 1em; opacity: 0.95;">Nairobi's spirit of resilience shines through challenges</p>
+                        </div>
+                    </div>
+                </div>
 
                 <section class="essay-section">
                     <h2>Challenges and Resilience</h2>

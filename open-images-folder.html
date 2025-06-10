@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Images Folder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .instructions {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nairobi Images Folder</h1>
+    
+    <div class="instructions">
+        <h3>How to add your image:</h3>
+        <ol>
+            <li>Click the button below to open the images folder</li>
+            <li>Copy your image file into this folder</li>
+            <li>Make sure the image is named exactly: <code>nairobi.jpg</code></li>
+        </ol>
+    </div>
+
+    <button class="btn" onclick="openFolder()">Open Images Folder</button>
+
+    <script>
+        function openFolder() {
+            // Try to open the folder using the file:// protocol
+            const folderPath = 'file:///C:/Users/HP/CascadeProjects/nathan_obiri_portfolio_v2/articles/images/nairobi';
+            window.open(folderPath, '_blank');
+            
+            // Fallback instructions if the direct open doesn't work
+            alert('If the folder did not open, please navigate to this path manually:\n\n' + 
+                  'C:\\Users\\HP\\CascadeProjects\\nathan_obiri_portfolio_v2\\articles\\images\\nairobi');
+        }
+    </script>
+</body>
+</html>
