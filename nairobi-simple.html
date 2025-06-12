@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nairobi - Simple View</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .image-box {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #eee;
+        }
+        .caption {
+            margin-top: 10px;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nairobi - Simple View</h1>
+    
+    <div class="image-box">
+        <h2>Nairobi Skyline</h2>
+        <img src="./articles/images/nairobi/nairobi.jpg.jpg" alt="Nairobi Skyline">
+        <div class="caption">The beautiful skyline of Nairobi city</div>
+    </div>
+    
+    <div class="image-box">
+        <h2>City Contrast</h2>
+        <img src="./articles/images/nairobi/contrast.jpg" alt="City Contrast">
+        <div class="caption">The contrast of modern and traditional in Nairobi</div>
+    </div>
+    
+    <div class="image-box">
+        <h2>Historic Nairobi</h2>
+        <img src="./articles/images/nairobi/historic.jpg" alt="Historic Nairobi">
+        <div class="caption">Historic landmarks in the heart of the city</div>
+    </div>
+    
+    <div class="image-box">
+        <h2>Modern Nairobi</h2>
+        <img src="./articles/images/nairobi/modern.jpg" alt="Modern Nairobi">
+        <div class="caption">Modern architecture in the city center</div>
+    </div>
+    
+    <div class="image-box">
+        <h2>Nairobi Nightlife</h2>
+        <img src="./articles/images/nairobi/nightlife.jpg" alt="Nairobi Nightlife">
+        <div class="caption">The vibrant nightlife of Nairobi</div>
+    </div>
+    
+    <p>Your Nairobi images are now displayed above. If you can't see them, please check:</p>
+    <ol>
+        <li>That the files exist in: <code>articles/images/nairobi/</code></li>
+        <li>The image filenames match exactly (case-sensitive)</li>
+        <li>You've opened this file through a web server (not just double-clicked)</li>
+    </ol>
+    <p>To open with a local server, run this command in the project folder: <code>python -m http.server 8000</code> then visit <a href="http://localhost:8000/nairobi-simple.html">http://localhost:8000/nairobi-simple.html</a></p>
+</body>
+</html>

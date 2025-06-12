@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nairobi Insights - Nathan Obiri</title>
     <link rel="stylesheet" href="../styles.css">
+    <style>
+        .article-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .grid-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -33,6 +61,7 @@
 
                 <section class="article-section">
                     <h2>City of Contrasts</h2>
+                    <img src="./images/nairobi/contrast.jpg" alt="Nairobi's contrasting cityscape" class="article-image">
                     <p>This is a city of opposites, where matatus are adorned with reggae art and neon lights, speeding past Range Rovers and barefoot merchants in the same breath. Steel and glass buildings scrape at the sky, while mabati roofs glisten underneath amid Kibera's sun-drenched expanse. Lions wander the verge of suburbia in Nairobi National Park, while traffic roars nearby. Only Nairobi dares to be proud of being both wild and civilized, damaged and dazzling, beautiful and raw.</p>
                 </section>
 
@@ -43,6 +72,10 @@
 
                 <section class="article-section">
                     <h2>Evolution of a City</h2>
+                    <div class="image-grid">
+                        <img src="./images/nairobi/historic.jpg" alt="Historic Nairobi" class="grid-image">
+                        <img src="./images/nairobi/modern.jpg" alt="Modern Nairobi skyline" class="grid-image">
+                    </div>
                     <p>The city stands in the birthplace of colonial railroads, but today, it follows its own path. What was once a swamp—Enkare Nairobi, "place of cool waters"—has evolved into East Africa's thriving economic hub. Its arteries extend into global trade, technological innovation, politics, and art. From Upper Hill's booming businesses to Kilimani's artistic collectives, Nairobi dreams in code, verse, silicon, and rhythm.</p>
                 </section>
 
@@ -53,6 +86,7 @@
 
                 <section class="article-section">
                     <h2>Nairobi at Night</h2>
+                    <img src="./images/nairobi/nightlife.jpg" alt="Nairobi nightlife" class="article-image">
                     <p>The city takes on a new life around sundown. Rooftop bars sparkle with laughter, while nyama choma smoke rises like incense from roadside barbecues. Nairobi at night hums with possibilities. Whether you're sipping chai at a kiosk or drinking champagne in a sky lounge, the stars overhead stay democratic. They light in the same way over the mansion and the bedsitter, Lavington and Kariobangi, riches and hunger.</p>
                 </section>
 
