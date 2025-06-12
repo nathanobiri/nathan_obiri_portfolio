@@ -498,6 +498,144 @@ section {
     }
 }
 
+/* Contact Section Styles */
+.contact .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(10, 15, 29, 0.7);
+    border: 1px solid var(--cyberpunk-blue);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(5, 217, 232, 0.1);
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(5, 217, 232, 0.3);
+    border-color: var(--cyberpunk-pink);
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: var(--cyberpunk-blue);
+    min-width: 30px;
+    text-align: center;
+}
+
+.contact-item p {
+    margin: 0;
+    color: var(--cyber-light);
+}
+
+.contact-item a {
+    color: var(--cyber-light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--cyberpunk-pink);
+    text-shadow: 0 0 10px rgba(211, 0, 255, 0.7);
+}
+
+/* Responsive Styles for Contact Section */
+@media (max-width: 992px) {
+    .contact .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .nairobi-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .nairobi-image {
+        height: 300px;
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .nairobi-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .contact-item {
+        padding: 1.2rem;
+    }
+    
+    .nairobi-image {
+        height: 250px;
+    }
+}
+
+/* Nairobi Section */
+.nairobi-section {
+    margin-top: 4rem;
+    padding: 3rem;
+    background: rgba(10, 15, 29, 0.7);
+    border: 1px solid var(--cyberpunk-purple);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nairobi-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--cyberpunk-blue), var(--cyberpunk-pink));
+}
+
+.nairobi-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.nairobi-text {
+    color: var(--cyber-light);
+}
+
+.nairobi-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.nairobi-image {
+    height: 350px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+}
+
+.nairobi-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(5, 217, 232, 0.4);
+}
+
 /* Form Styles */
 .contact-form {
     max-width: 800px;
