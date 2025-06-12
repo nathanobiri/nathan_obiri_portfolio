@@ -1,58 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NicheWriter - Digital Storytelling & Content Creation</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Digital storyteller and content creator specializing in engaging narratives and digital experiences.">
+    <meta name="keywords" content="digital storytelling, content creation, cyberpunk, portfolio, web design">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Cyberpunk Portfolio - Digital Storyteller & Content Creator">
+    <meta property="og:description" content="Crafting compelling narratives in the digital age with a cyberpunk aesthetic.">
+    <meta property="og:image" content="assets/og-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Cyberpunk Portfolio - Digital Storyteller & Content Creator</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#0a0f1d">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/cyberpunk-theme.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+    <!-- Circuit Background Elements -->
+    <div class="circuit-line horizontal-line-1"></div>
+    <div class="circuit-line vertical-line-1"></div>
+    <div class="circuit-line diagonal-line-1"></div>
+    
+    <!-- Animated Grid Overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Floating Particles -->
+    <div id="particles-js"></div>
+
     <header>
         <nav>
-            <div class="logo">
-                <svg width="150" height="50" viewBox="0 0 150 50" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                    <text x="0" y="40" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="bold" fill="url(#logo-gradient)">NicheWriter</text>
-                </svg>
-            </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#articles">Articles</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <a href="#" class="logo">NICHE<span>WRITER</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#articles" class="nav-link">Articles</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="auth-buttons">
-                <button class="contact-btn">Contact Me</button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <div class="hero-tagline">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="glitch-container">
+                        <h1 class="glitch" data-text="DIGITAL STORYTELLER">DIGITAL STORYTELLER</h1>
+                        <p class="hero-subtitle neon-text">Crafting compelling narratives in the digital age</p>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-cyber">
+                            <span class="btn-text">GET IN TOUCH</span>
+                            <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="#articles" class="btn-cyber btn-outline">
+                            <span class="btn-text">VIEW MY WORK</span>
+                            <span class="btn-icon"><i class="fas fa-code"></i></span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span class="pulse"></span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span class="pulse"></span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span class="pulse"></span>
+                        </a>
+                        <a href="#contact" class="social-icon" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                            <span class="pulse"></span>
+                        </a>
+                    </div>
+                    
+                    <div class="scroll-indicator">
+                        <span class="scroll-text">SCROLL DOWN</span>
+                        <div class="scroll-line"></div>
+                    </div>
                     <span class="highlight">Content Creator</span>
                     <span class="highlight">Storyteller</span>
                     <span class="highlight">Digital Marketer</span>
                 </div>
-                <h1 class="typewriter">Crafting <span class="text-gradient">Impactful Stories</span> for the Digital World</h1>
-                <p class="hero-subtitle">Transforming complex ideas into engaging narratives that connect, inspire, and drive action.</p>
-                <div class="hero-buttons">
-                    <a href="#articles" class="cta-button primary">Explore My Work</a>
-                    <a href="#contact" class="cta-button secondary">Let's Work Together</a>
+                <h1 class="glitch" data-text="CRAFTING DIGITAL NARRATIVES">CRAFTING DIGITAL NARRATIVES</h1>
+                <p class="subtitle">Transforming complex ideas into engaging narratives that connect, inspire, and drive action in the digital frontier.</p>
+                <div class="cta-buttons">
+                    <a href="#articles" class="btn btn-primary">
+                        <span class="btn-text">Explore My Work</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span class="btn-text">Let's Work Together</span>
+                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                    </a>
                 </div>
-                <div class="scroll-down">
-                    <span>Scroll to explore</span>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 5v14M19 12l-7 7-7-7"/>
-                    </svg>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link" aria-label="Medium"><i class="fab fa-medium-m"></i></a>
                 </div>
             </div>
             <div class="hero-image">
@@ -71,12 +150,17 @@
                 
                 <div class="about-content">
                     <div class="about-image" data-aos="fade-right">
-                        <div class="image-wrapper">
-                            <img src="https://source.unsplash.com/600x800/?writer,african" alt="Nathan Obiri" class="profile-image">
-                            <div class="image-overlay">
-                                <div class="experience-badge">
-                                    <span class="years">5+</span>
-                                    <span class="text">Years Experience</span>
+                        <div class="hero-image" data-aos="fade-left">
+                            <div class="profile-container">
+                                <div class="profile-image">
+                                    <img src="https://source.unsplash.com/600x800/?writer,african" alt="Nathan Obiri">
+                                </div>
+                                <div class="glow-effect"></div>
+                                <div class="tech-circle circle-1"></div>
+                                <div class="tech-circle circle-2"></div>
+                                <div class="tech-circle circle-3"></div>
+                                <div class="hexagon">
+                                    <div class="hexagon-inner"></div>
                                 </div>
                             </div>
                         </div>
@@ -479,6 +563,266 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript Files -->
+    <script src="js/particles-config.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Initialize ScrollReveal -->
+    <script>
+        ScrollReveal().reveal('.reveal', { 
+            delay: 200,
+            distance: '50px',
+            duration: 1000,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            interval: 100
+        });
+    </script>
+    <!-- Particles.js Container -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#articles" class="nav-link">Articles</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="glitch-container">
+                        <h1 class="glitch" data-text="DIGITAL STORYTELLER">DIGITAL STORYTELLER</h1>
+                        <p class="hero-subtitle neon-text typewriter">Crafting compelling narratives in the digital age</p>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-cyber">
+                            <span class="btn-text">GET IN TOUCH</span>
+                            <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="#articles" class="btn-cyber btn-outline">
+                            <span class="btn-text">VIEW MY WORK</span>
+                            <span class="btn-icon"><i class="fas fa-code"></i></span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span class="pulse"></span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span class="pulse"></span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span class="pulse"></span>
+                        </a>
+                        <a href="#contact" class="social-icon" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                            <span class="pulse"></span>
+                        </a>
+                    </div>
+                    
+                    <div class="scroll-indicator">
+                        <span class="scroll-text">SCROLL DOWN</span>
+                        <div class="scroll-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="cyber-card">
+                            <img src="https://via.placeholder.com/400x500" alt="Profile" class="profile-img">
+                            <div class="tech-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Digital Storyteller & Content Creator</h3>
+                        <p>I'm a passionate digital storyteller dedicated to crafting meaningful narratives that resonate with audiences and drive engagement. With a background in creative writing and digital marketing, I bring stories to life through compelling content.</p>
+                        
+                        <div class="skills">
+                            <h4>Skills & Expertise</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Content Strategy</span>
+                                <span class="skill-tag">Creative Writing</span>
+                                <span class="skill-tag">SEO Optimization</span>
+                                <span class="skill-tag">Social Media</span>
+                                <span class="skill-tag">Video Production</span>
+                                <span class="skill-tag">Graphic Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section id="articles" class="section">
+            <div class="container">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="articles-grid">
+                    <article class="cyber-card">
+                        <div class="article-image">
+                            <img src="https://via.placeholder.com/600x400" alt="Article 1">
+                            <div class="article-category">Digital Marketing</div>
+                        </div>
+                        <div class="article-content">
+                            <h3>The Future of Content Marketing in 2025</h3>
+                            <p>Exploring the latest trends and strategies in content marketing that are shaping the digital landscape.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="cyber-card">
+                        <div class="article-image">
+                            <img src="https://via.placeholder.com/600x400" alt="Article 2">
+                            <div class="article-category">Storytelling</div>
+                        </div>
+                        <div class="article-content">
+                            <h3>Mastering the Art of Digital Storytelling</h3>
+                            <p>Learn how to create compelling narratives that captivate your audience and drive engagement.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="cyber-card">
+                        <div class="article-image">
+                            <img src="https://via.placeholder.com/600x400" alt="Article 3">
+                            <div class="article-category">Social Media</div>
+                        </div>
+                        <div class="article-content">
+                            <h3>Maximizing Engagement on Social Platforms</h3>
+                            <p>Proven strategies to boost your social media presence and connect with your audience.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Work Together</h3>
+                        <p>Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:hello@example.com">hello@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <span>Nairobi, Kenya</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <button type="submit" class="btn-cyber">
+                            <span class="btn-text">SEND MESSAGE</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Cyber<span>Writer</span></h3>
+                    <p>Crafting digital experiences that inspire and engage.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberWriter. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/cyberpunk.js"></script>
 </body>
 </html>

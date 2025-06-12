@@ -1,0 +1,23 @@
+{
+  "name": "Cyberpunk Portfolio",
+  "short_name": "CyberPortfolio",
+  "description": "Digital storytelling portfolio with a cyberpunk theme",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0f1d",
+  "theme_color": "#05d9e8",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
